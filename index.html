@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DHRUVANTHEERA CONSTRUCTIONS</title>
+
+    <meta name="description"
+        content="Dhruvantheera Constructions — Building spaces with precision, trust and timeless design." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./DRUVANTHEERA_FINAL_LOGO.png" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Top-Start & Session Intro Controller -->
+    <script>
+        (function () {
+            try {
+                if ('scrollRestoration' in history) {
+                    history.scrollRestoration = 'manual';
+                }
+                window.scrollTo(0, 0);
+
+                var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+                var isReload = nav ? nav.type === "reload" : (window.performance && window.performance.navigation && window.performance.navigation.type === 1);
+                var hasVisited = sessionStorage.getItem("site_intro_played");
+
+                // Only show intro when website is opened (fresh tab/session) or if reloaded
+                if (hasVisited && !isReload) {
+                    document.documentElement.classList.add("skip-intro");
+                }
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body class="intro-active">
+
+    <!-- =======================================================
+       CINEMATIC VIDEO INTRO
+  ======================================================== -->
+
+    <div class="intro" id="intro" role="dialog" aria-modal="true" aria-label="Welcome to Dhruvantheera Constructions">
+
+        <button class="intro-skip-btn" id="introSkipBtn" type="button" aria-label="Skip introduction">
+            <span>Skip Intro</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </button>
+
+        <div class="intro-content">
+
+            <div class="intro-video-wrapper">
+                <video 
+                    id="introVideo" 
+                    class="intro-video" 
+                    playsinline 
+                    muted 
+                    autoplay 
+                    preload="auto"
+                >
+                    <source src="intro.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div class="intro-video-glow"></div>
+            </div>
+
+            <div class="intro-brand">
+                <h1 class="intro-title">
+                    DHRUVANTHEERA CONSTRUCTIONS
+                    
+                </h1>
+
+                <div class="intro-line"></div>
+
+                <p class="intro-subtitle">
+                    Building Beyond Expectations
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =======================================================
+       NAVBAR
+  ======================================================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-inner">
+
+            <a href="#home" class="brand">
+
+                <img src="./DRUVANTHEERA_FINAL_LOGO.png" alt="Dhruvantheera Constructions" class="brand-logo" />
+
+                <div class="brand-text">
+                    <span class="brand-name">
+                        DHRUVANTHEERA
+                    </span>
+
+                    <span class="brand-sub">
+                        CONSTRUCTIONS
+                    </span>
+                </div>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="dhruvantheera-portfolio-refined.html">Portfolio</a>
+                <a href="#projects">Projects</a>
+                <a href="#values">Values</a>
+                <a href="#contact">Contact</a>
+                <a href="Book.html">Book</a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button class="btn btn-gold" onclick="openEnquiry()">
+                    Enquire Now
+
+                    <span class="btn-arrow">→</span>
+                </button>
+
+            </div>
+
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =======================================================
+       HERO
+  ======================================================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-slide active"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-eyebrow">
+                    Crafted With Precision
+                </div>
+
+                <h1 class="hero-title">
+                    Spaces Built For
+                    <span>Generations.</span>
+                </h1>
+
+                <p class="hero-description">
+                    We create thoughtfully designed spaces where architecture,
+                    engineering and craftsmanship come together to create
+                    lasting value.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#projects" class="btn btn-gold">
+                        Explore Projects
+
+                        <span class="btn-arrow">→</span>
+                    </a>
+
+                    <button class="btn btn-outline" onclick="openEnquiry()" style="background-color: white;">
+                        Start A Conversation
+
+                        <span class="btn-arrow">↗</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom">
+
+                <div class="hero-bottom-inner">
+
+                    <div class="hero-scroll">
+                        <span class="scroll-line"></span>
+                        Scroll to explore
+                    </div>
+
+                    <div class="hero-counter">
+                        01 / 03
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+        <section class="section" id="about">
+
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-image reveal-left">
+
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=90"
+                            alt="Modern architectural building" />
+
+                        <div class="about-badge">
+
+                            <strong>15+</strong>
+
+                            <span>
+                                Years of Experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-copy reveal-right">
+
+                        <div class="section-label">
+                            Who We Are
+                        </div>
+
+                        <h3>
+                            Architecture With
+                            Purpose. Construction
+                            With Integrity.
+                        </h3>
+
+                        <p>
+                            Dhruvantheera Constructions is focused on creating
+                            exceptional residential and commercial spaces that
+                            combine thoughtful architecture with dependable
+                            construction.
+                        </p>
+
+                        <p>
+                            From the first drawing to the final detail, our
+                            approach is driven by quality, transparency and
+                            attention to detail.
+                        </p>
+
+
+                        <div class="about-points">
+
+                            <div class="about-point">
+
+                                <div class="point-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Quality First
+                                    </strong>
+
+                                    <span>
+                                        Materials and workmanship selected for long-term value.
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="about-point">
+
+                                <div class="point-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Thoughtful Design
+                                    </strong>
+
+                                    <span>
+                                        Spaces designed around people, purpose and lifestyle.
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="about-point">
+
+                                <div class="point-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Reliable Execution
+                                    </strong>
+
+                                    <span>
+                                        Disciplined project planning from concept to completion.
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- <button class="btn btn-primary" onclick="openEnquiry()">
+                            Talk To Our Teams
+
+                            <span class="btn-arrow">→</span>
+                        </button> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         STATS
+    ====================================================== -->
+
+        <section class="stats">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat reveal">
+
+                        <div class="stat-number" data-target="15">
+                            0<span>+</span>
+                        </div>
+
+                        <div class="stat-label">
+                            Years Experience
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat reveal">
+
+                        <div class="stat-number" data-target="35">
+                            0<span>+</span>
+                        </div>
+
+                        <div class="stat-label">
+                            Projects
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat reveal">
+
+                        <div class="stat-number" data-target="12">
+                            0<span>+</span>
+                        </div>
+
+                        <div class="stat-label">
+                            Locations
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat reveal">
+
+                        <div class="stat-number" data-target="98">
+                            0<span>%</span>
+                        </div>
+
+                        <div class="stat-label">
+                            Client Satisfaction
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+        <section class="section section-light" id="projects">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div>
+
+                        <div class="section-label">
+                            Our Portfolio
+                        </div>
+
+                        <h2 class="section-title">
+                            Selected Projects
+                        </h2>
+
+                    </div>
+
+                    <p class="section-description">
+                        Explore a selection of spaces shaped by our approach
+                        to design, engineering and quality construction.
+                    </p>
+
+                </div>
+
+
+                <div class="project-filters reveal">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All Projects
+                    </button>
+
+                    <button class="filter-btn" data-filter="upcoming">
+                        Upcoming
+                    </button>
+
+                    <button class="filter-btn" data-filter="ongoing">
+                        Ongoing
+                    </button>
+
+                    <button class="filter-btn" data-filter="completed">
+                        Completed
+                    </button>
+
+                </div>
+
+
+                <div class="projects-grid" id="projectsGrid">
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card reveal" data-category="ongoing" onclick="openProject(0)">
+
+                        <div class="project-image">
+
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=90"
+                                alt="Luxury residential project" />
+
+                            <span class="project-status">
+                                Ongoing
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-location">
+                                Hyderabad
+                            </div>
+
+                            <h3 class="project-title">
+                                The Grand Residences
+                            </h3>
+
+                            <div class="project-meta">
+
+                                <span>
+                                    Premium Residences
+                                </span>
+
+                                <span class="project-view">
+                                    View Project →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card reveal" data-category="upcoming" onclick="openProject(1)">
+
+                        <div class="project-image">
+
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=90"
+                                alt="Modern residential development" />
+
+                            <span class="project-status">
+                                Upcoming
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-location">
+                                Bengaluru
+                            </div>
+
+                            <h3 class="project-title">
+                                Aurelia Heights
+                            </h3>
+
+                            <div class="project-meta">
+
+                                <span>
+                                    Luxury Apartments
+                                </span>
+
+                                <span class="project-view">
+                                    View Project →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card reveal" data-category="completed" onclick="openProject(2)">
+
+                        <div class="project-image">
+
+                            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=90"
+                                alt="Completed modern villa" />
+
+                            <span class="project-status">
+                                Completed
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-location">
+                                Hyderabad
+                            </div>
+
+                            <h3 class="project-title">
+                                Terra Villas
+                            </h3>
+
+                            <div class="project-meta">
+
+                                <span>
+                                    Luxury Villas
+                                </span>
+
+                                <span class="project-view">
+                                    View Project →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 4 -->
+
+                    <article class="project-card reveal" data-category="ongoing" onclick="openProject(3)">
+
+                        <div class="project-image">
+
+                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=90"
+                                alt="Commercial office project" />
+
+                            <span class="project-status">
+                                Ongoing
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-location">
+                                Hyderabad
+                            </div>
+
+                            <h3 class="project-title">
+                                Vertex Business Park
+                            </h3>
+
+                            <div class="project-meta">
+
+                                <span>
+                                    Commercial
+                                </span>
+
+                                <span class="project-view">
+                                    View Project →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 5 -->
+
+                    <article class="project-card reveal" data-category="completed" onclick="openProject(4)">
+
+                        <div class="project-image">
+
+                            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=90"
+                                alt="Modern completed home" />
+
+                            <span class="project-status">
+                                Completed
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-location">
+                                Secunderabad
+                            </div>
+
+                            <h3 class="project-title">
+                                Eden Courtyard
+                            </h3>
+
+                            <div class="project-meta">
+
+                                <span>
+                                    Residential
+                                </span>
+
+                                <span class="project-view">
+                                    View Project →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 6 -->
+
+                    <article class="project-card reveal" data-category="upcoming" onclick="openProject(5)">
+
+                        <div class="project-image">
+
+                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=90"
+                                alt="Premium upcoming villa" />
+
+                            <span class="project-status">
+                                Upcoming
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-location">
+                                Hyderabad
+                            </div>
+
+                            <h3 class="project-title">
+                                The Haven
+                            </h3>
+
+                            <div class="project-meta">
+
+                                <span>
+                                    Premium Villas
+                                </span>
+
+                                <span class="project-view">
+                                    View Project →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         VALUES
+    ====================================================== -->
+
+        <section class="section" id="values">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div>
+
+                        <div class="section-label">
+                            Our Philosophy
+                        </div>
+
+                        <h2 class="section-title">
+                            Built Around
+                            What Matters.
+                        </h2>
+
+                    </div>
+
+                    <p class="section-description">
+                        Every project is guided by principles that remain
+                        consistent from the foundation to the final finish.
+                    </p>
+
+                </div>
+
+
+                <div class="values-grid">
+
+                    <div class="value-card reveal">
+
+                        <div class="value-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Craftsmanship
+                        </h3>
+
+                        <p>
+                            Every detail receives the attention required to
+                            create spaces that feel refined, durable and timeless.
+                        </p>
+
+                    </div>
+
+
+                    <div class="value-card reveal">
+
+                        <div class="value-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Transparency
+                        </h3>
+
+                        <p>
+                            Clear communication and disciplined execution keep
+                            every project moving with confidence.
+                        </p>
+
+                    </div>
+
+
+                    <div class="value-card reveal">
+
+                        <div class="value-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Long-Term Value
+                        </h3>
+
+                        <p>
+                            We think beyond handover, creating spaces designed
+                            to remain valuable for years to come.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         CINEMATIC SECTION
+    ====================================================== -->
+
+        <section class="cinematic">
+
+            <div class="cinematic-content reveal">
+
+                <div class="section-label">
+                    The Dhruvantheera Standard
+                </div>
+
+                <h2>
+                    We Don't Just Build
+                    Structures.
+                    We Build Legacies.
+                </h2>
+
+                <p>
+                    From architectural vision to the smallest finishing
+                    detail, our work is driven by one goal — creating
+                    spaces people are proud to call their own.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         TESTIMONIALS
+    ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div>
+
+                        <div class="section-label">
+                            Client Perspective
+                        </div>
+
+                        <h2 class="section-title">
+                            What Our Clients Say
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonial-wrapper">
+
+                <div class="testimonial-track">
+
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “The team maintained excellent communication
+                            throughout the project. The quality and finishing
+                            exceeded our expectations.”
+                        </p>
+
+                        <div class="testimonial-person">
+
+                            <div class="testimonial-avatar">
+                                RK
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Rahul K.
+                                </strong>
+
+                                <span>
+                                    Hyderabad
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “A professional team with strong attention to
+                            detail. Every stage of the project was handled
+                            thoughtfully.”
+                        </p>
+
+                        <div class="testimonial-person">
+
+                            <div class="testimonial-avatar">
+                                AP
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Ananya P.
+                                </strong>
+
+                                <span>
+                                    Bengaluru
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “We appreciated the transparency and quality of
+                            work. The final result feels exactly like what
+                            we imagined.”
+                        </p>
+
+                        <div class="testimonial-person">
+
+                            <div class="testimonial-avatar">
+                                VS
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Vikram S.
+                                </strong>
+
+                                <span>
+                                    Hyderabad
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Duplicate cards for continuous marquee -->
+
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “The team maintained excellent communication
+                            throughout the project. The quality and finishing
+                            exceeded our expectations.”
+                        </p>
+
+                        <div class="testimonial-person">
+
+                            <div class="testimonial-avatar">
+                                RK
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Rahul K.
+                                </strong>
+
+                                <span>
+                                    Hyderabad
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “A professional team with strong attention to
+                            detail. Every stage of the project was handled
+                            thoughtfully.”
+                        </p>
+
+                        <div class="testimonial-person">
+
+                            <div class="testimonial-avatar">
+                                AP
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Ananya P.
+                                </strong>
+
+                                <span>
+                                    Bengaluru
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “We appreciated the transparency and quality of
+                            work. The final result feels exactly like what
+                            we imagined.”
+                        </p>
+
+                        <div class="testimonial-person">
+
+                            <div class="testimonial-avatar">
+                                VS
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Vikram S.
+                                </strong>
+
+                                <span>
+                                    Hyderabad
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         ENQUIRY CTA
+    ====================================================== -->
+
+        <section class="section enquiry-section" id="contact">
+
+            <div class="container">
+
+                <div class="enquiry-box reveal">
+
+                    <div class="enquiry-box-content">
+
+                        <div class="section-label">
+                            Start Your Project
+                        </div>
+
+                        <h2>
+                            Have A Vision?
+                            Let's Build It.
+                        </h2>
+
+                        <p>
+                            Tell us about your project and our team will
+                            get in touch with you.
+                        </p>
+
+                        <div class="enquiry-actions">
+
+                            <button class="btn btn-gold" onclick="openEnquiry()">
+                                Send An Enquiry
+
+                                <span class="btn-arrow">
+                                    →
+                                </span>
+
+                            </button>
+
+                            <!-- <a href="tel:+919999999999" class="btn btn-outline" style="background-color: #ffffff;">
+                                Call Our Team
+
+                                <span class="btn-arrow">
+                                    ↗
+                                </span>
+
+                            </a> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="brand">
+
+                        <img src="./DRUVANTHEERA_FINAL_LOGO.png" alt="Dhruvantheera Constructions" class="brand-logo" />
+
+                        <div class="brand-text">
+
+                            <span class="brand-name">
+                                DHRUVANTHEERA
+                            </span>
+
+                            <span class="brand-sub">
+                                CONSTRUCTIONS
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Building thoughtful spaces with precision,
+                        integrity and a commitment to lasting quality.
+                    </p> 
+
+                     <div class="footer-map-wrap">
+                            <div class="footer-map-label">Find us in Hyderabad</div>
+                            <iframe
+                                title="Map showing Hyderabad, Telangana"
+                                src="https://www.google.com/maps?q=Hyderabad%2C%20Telangana%2C%20India&amp;output=embed"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-heading">
+                        Company
+                    </div>
+
+                    <div class="footer-links">
+
+                        <a href="#about">
+                            About
+                        </a>
+
+                        <a href="#projects">
+                            Projects
+                        </a>
+
+                        <a href="#values">
+                            Our Values
+                        </a>
+
+                        <a href="#contact">
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-heading">
+                        Explore
+                    </div>
+
+                    <div class="footer-links">
+
+                        <a href="#projects">
+                            Upcoming Projects
+                        </a>
+
+                        <a href="#projects">
+                            Ongoing Projects
+                        </a>
+
+                        <a href="#projects">
+                            Completed Projects
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-heading">
+                        Contact
+                    </div>
+
+                    <div class="footer-contact">
+
+                        <div>
+                            Hyderabad, Telangana
+                        </div>
+
+                        <div>
+                            +91 99999 99999
+                        </div>
+
+                        <div>
+                            dhruvantheera@gmail.com
+                        </div>
+
+                        <div class="footer-social">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:dhruvantheera@gmail.com" class="social-link" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Dhruvantheera Constructions.
+                    All rights reserved.
+                </span>
+
+                <span>
+                    Designed By Ruthveek & Yasasswini
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =======================================================
+       PROJECT MODAL
+  ======================================================== -->
+
+    <div class="modal" id="projectModal" aria-hidden="true">
+
+        <div class="modal-box project-modal-box" role="dialog" aria-modal="true" aria-label="Project details">
+
+            <button class="modal-close" onclick="closeModal('projectModal')" aria-label="Close project details">
+                ×
+            </button>
+
+
+            <div class="project-modal-grid">
+
+                <!-- Image Carousel -->
+                <div class="modal-project-image" id="modalImageCarousel">
+
+                    <!-- Arrow: Previous -->
+                    <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Previous image">
+                        &#8592;
+                    </button>
+
+                    <!-- Image Track -->
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Images injected by JS -->
+                    </div>
+
+                    <!-- Arrow: Next -->
+                    <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Next image">
+                        &#8594;
+                    </button>
+
+                    <!-- Dot Pagination -->
+                    <div class="carousel-dots" id="carouselDots">
+                        <!-- Dots injected by JS -->
+                    </div>
+
+                </div>
+
+
+                <div class="modal-project-content">
+
+                    <div class="modal-label" id="modalProjectStatus">
+                        Ongoing
+                    </div>
+
+                    <h2 id="modalProjectTitle">
+                        Project
+                    </h2>
+
+                    <p id="modalProjectDescription">
+                        Project description.
+                    </p>
+
+
+                    <div class="modal-details">
+
+                        <div class="detail">
+
+                            <span>
+                                Location
+                            </span>
+
+                            <strong id="modalLocation">
+                                Hyderabad
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <span>
+                                Type
+                            </span>
+
+                            <strong id="modalType">
+                                Residential
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <span>
+                                Status
+                            </span>
+
+                            <strong id="modalStatus">
+                                Ongoing
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail">
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong id="modalCategory">
+                                Premium
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn btn-primary" style="margin-top:30px"
+                        onclick="closeModal('projectModal'); openEnquiry();">
+                        Enquire About Project
+
+                        <span class="btn-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =======================================================
+       ENQUIRY MODAL
+  ======================================================== -->
+
+    <div class="modal" id="enquiryModal" aria-hidden="true">
+
+        <div class="modal-box enquiry-modal-box" role="dialog" aria-modal="true" aria-label="Project enquiry">
+
+            <button class="modal-close" onclick="closeModal('enquiryModal')" aria-label="Close enquiry form">
+                ×
+            </button>
+
+
+            <div class="enquiry-modal-header">
+
+                <div class="modal-label">
+                    Project Enquiry
+                </div>
+
+                <h2>
+                    Let's Talk About
+                    Your Project.
+                </h2>
+
+                <p>
+                    Share a few details and our team will get back to you.
+                </p>
+
+            </div>
+
+
+            <form class="form" id="enquiryForm" novalidate>
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name <span class="required-star">*</span>
+                    </label>
+
+                    <input type="text" id="name" placeholder="Enter your full name" maxlength="50" required />
+                    <span class="field-error" id="nameError"></span>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number <span class="required-star">*</span>
+                    </label>
+
+                    <input type="tel" id="phone" placeholder="10-digit mobile number" maxlength="10" required />
+                    <span class="field-error" id="phoneError"></span>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email <span class="required-star">*</span>
+                    </label>
+
+                    <input type="email" id="email" placeholder="example@domain.com" maxlength="70" required />
+                    <span class="field-error" id="emailError"></span>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="projectType">
+                        Project Type <span class="required-star">*</span>
+                    </label>
+
+                    <select id="projectType" required>
+
+                        <option value="">
+                            Select project type
+                        </option>
+
+                        <option value="Residential">
+                            Residential
+                        </option>
+
+                        <option value="Villa">
+                            Villa
+                        </option>
+
+                        <option value="Apartment">
+                            Apartment
+                        </option>
+
+                        <option value="Commercial">
+                            Commercial
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+                    <span class="field-error" id="projectTypeError"></span>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="message">
+                        Tell Us About Your Requirement <span class="required-star">*</span>
+                    </label>
+
+                    <textarea id="message" placeholder="Tell us about your project requirements..." maxlength="100" required></textarea>
+                    <div class="form-footer-meta">
+                        <span class="field-error" id="messageError"></span>
+                        <span class="char-counter" id="messageCount">0 / 100</span>
+                    </div>
+
+                </div>
+
+
+                <div class="form-submit">
+
+                    <button class="btn btn-primary" type="submit">
+                        Submit Enquiry
+
+                        <span class="btn-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <div class="success-message" id="successMessage">
+                ✓ Thank you. Your enquiry has been received.
+                Our team will contact you shortly.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =======================================================
+       SCROLL TO TOP BUTTON
+    ======================================================== -->
+    <button class="scroll-top-btn" id="scrollTopBtn" type="button" aria-label="Scroll to top" title="Scroll to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <!-- =======================================================
+       AI CHATBOT WIDGET & FOUNDER CONCIERGE
+    ======================================================== -->
+    <div class="chatbot-wrapper" id="chatbotWrapper">
+
+        <!-- Animated Floating Teaser Bubble -->
+        <div class="chatbot-teaser" id="chatbotTeaser" role="status">
+            <span class="teaser-wave">👋</span>
+            <div class="teaser-text" id="teaserTrigger">
+                <strong>Hi! Click me</strong> to know about <span>DHRUVANTHEERA CONSTRUCTIONS</span>
+            </div>
+            <button class="teaser-close" id="teaserClose" type="button" aria-label="Dismiss message">&times;</button>
+        </div>
+
+        <!-- Floating Chatbot Launcher Toggle Button -->
+        <button class="chatbot-toggle-btn" id="chatbotToggle" type="button" aria-label="Open Dhruvantheera AI Assistant" aria-expanded="false">
+            <span class="pulse-ring"></span>
+            <span class="online-dot"></span>
+            <span class="chat-icon-open"><i class="fa-solid fa-headset"></i></span>
+            <span class="chat-icon-close"><i class="fa-solid fa-xmark"></i></span>
+        </button>
+
+        <!-- Chatbot Window Modal -->
+        <div class="chatbot-window" id="chatbotWindow" role="dialog" aria-modal="true" aria-label="Dhruvantheera AI Chat Assistant" hidden>
+            
+            <!-- Chat Header -->
+            <div class="chatbot-header">
+                <div class="chat-brand-info">
+                    <div class="chat-avatar">
+                        <img src="./DRUVANTHEERA_FINAL_LOGO.png" alt="Dhruvantheera AI" />
+                        <span class="avatar-online"></span>
+                    </div>
+                    <div class="chat-title-group">
+                        <div class="chat-title">
+                            <span>Dhruvantheera AI</span>
+                            <span class="ai-badge">AI Assistant</span>
+                        </div>
+                        <div class="chat-status">
+                            <span class="status-indicator"></span> Online • Founder & Construction Concierge
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <a href="https://wa.me/917981227221?text=Hi%2C%20I%20would%20like%20to%20connect%20with%20Dhruvantheera%20Constructions." target="_blank" rel="noopener noreferrer" class="chat-hdr-btn" title="Direct WhatsApp" aria-label="WhatsApp Founder">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button class="chat-hdr-btn" id="chatbotMinBtn" type="button" title="Close" aria-label="Close Chat">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Conversation Feed -->
+            <div class="chatbot-body" id="chatbotBody">
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <!-- Messages will be dynamically rendered here -->
+                </div>
+            </div>
+
+            <!-- Quick Action Suggestion Chips -->
+            <div class="chatbot-quick-chips" id="chatbotChips">
+                <button type="button" class="chip-btn" data-query="founder">👤 Founder Details</button>
+                <button type="button" class="chip-btn" data-query="services">🏗️ Our Services</button>
+                <button type="button" class="chip-btn" data-query="cost">💰 Pricing & Cost</button>
+                <button type="button" class="chip-btn" data-query="contact">📞 Direct Contact</button>
+                <button type="button" class="chip-btn" data-query="book">📅 Book Site Visit</button>
+                <button type="button" class="chip-btn" data-query="about">🏢 About Us</button>
+            </div>
+
+            <!-- Chat Input Footer -->
+            <form class="chatbot-footer" id="chatbotForm" autocomplete="off">
+                <input 
+                    type="text" 
+                    id="chatbotInput" 
+                    class="chatbot-input" 
+                    placeholder="Ask about founder, costs, projects..." 
+                    maxlength="200"
+                    aria-label="Type your message"
+                />
+                <button type="submit" class="chatbot-send-btn" id="chatbotSendBtn" aria-label="Send message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =======================================================
+       JAVASCRIPT
+  ======================================================== -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

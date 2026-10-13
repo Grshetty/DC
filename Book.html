@@ -1,0 +1,1124 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Top 10 Projects | Dhruvantheera Constructions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="DRUVANTHEERA_FINAL_LOGO.png" type="image/x-icon">
+
+<script>
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+</script>
+
+<style>
+:root {
+  --ink: #202725;
+  --green: #253a33;
+  --gold: #b69a66;
+  --paper: #fbf9f4;
+  --muted: #797d76;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #f1f0ec;
+  color: var(--ink);
+}
+
+body.book-open {
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-book {
+  border: 1px solid #1a2a24;
+  background: #1a2a24;
+  color: #f7f5f0;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(26, 42, 36, 0.15);
+  transition: all .25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-book:hover {
+  background: #b69a66;
+  border-color: #b69a66;
+  color: #121c18;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(182, 154, 102, 0.35);
+}
+
+.btn-book:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-outline-book {
+  border: 1px solid #d3cec4;
+  background: #ffffff;
+  color: #2b332f;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: all .25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-book:hover {
+  border-color: #b69a66;
+  color: #8c7241;
+  background: #fbf9f4;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.btn-outline-book:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.book-launch {
+  padding: 24px;
+  text-align: center;
+}
+
+/* FULL-SCREEN POPUP */
+
+.book-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: none;
+  flex-direction: column;
+  background: #f1f0ec;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.book-popup.open {
+  display: flex;
+}
+
+.popup-header {
+  flex-shrink: 0;
+  min-height: 58px;
+  padding: 10px 22px;
+  background: #17211f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.popup-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.popup-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.popup-header .btn-outline-book {
+  color: white;
+  border-color: #758078;
+}
+
+/* IMPORTANT: GIVE THE BOOK A REAL HEIGHT */
+
+.book-stage {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  overflow: hidden;
+}
+
+#book {
+  width: 100%;
+  max-width: 1040px;
+  height: 100%;
+  max-height: 740px;
+  margin: auto;
+  position: relative;
+}
+
+/* PAGE DESIGN */
+
+.page {
+  background: var(--paper);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.page-content {
+  height: 100%;
+  width: 100%;
+  padding: 24px 25px 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.page-kicker {
+  color: #9a8151;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.page-title {
+  font: 500 25px/1.15 'Playfair Display', serif;
+  margin: 9px 0;
+}
+
+.page-desc {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.page-footer {
+  margin-top: auto;
+  padding-top: 9px;
+  border-top: 1px solid #e4e0d6;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #85867d;
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+/* COVER */
+
+.cover-page {
+  height: 100%;
+  position: relative;
+  background: #1e3029;
+  color: white;
+  overflow: hidden;
+}
+
+.cover-photo {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: .45;
+}
+
+.cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #17211f35, #17211ff2);
+}
+
+.cover-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 35px 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover-company {
+  font-size: 9px;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+
+.cover-rule {
+  width: 55px;
+  height: 2px;
+  background: var(--gold);
+  margin: 20px 0;
+}
+
+.cover-title {
+  font: 500 clamp(30px, 4vw, 45px)/1.08 'Playfair Display', serif;
+  margin: 14px 0;
+}
+
+.cover-bottom {
+  color: #e6e0d4;
+  font-size: 9px;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+/* PROJECT PAGE: ONE PROJECT PER PAGE */
+
+.project-heading {
+  margin-bottom: 12px;
+}
+
+.project-number {
+  color: #9b8050;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.project-name {
+  font: 500 23px/1.2 'Playfair Display', serif;
+  margin: 8px 0 5px;
+}
+
+.project-type {
+  color: #72776f;
+  font-size: 9px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 125px 90px;
+  gap: 5px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.photo-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #e8e4dc;
+}
+
+.photo-grid img:first-child {
+  grid-row: span 2;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 12px;
+  margin-bottom: 12px;
+  font-size: 9px;
+  color: #60665f;
+}
+
+.project-meta a {
+  color: #6d684e;
+  text-decoration: none;
+  border-bottom: 1px solid #c6b58e;
+}
+
+.quote {
+  background: #f0ede5;
+  border-left: 2px solid var(--gold);
+  padding: 12px;
+  font: italic 11px/1.6 'Playfair Display', serif;
+  color: #444a43;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 7px;
+  font: 700 8px 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8a7955;
+}
+
+.project-note {
+  margin-top: 12px;
+  color: #77796f;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+/* CLOSING PAGE */
+
+.end-page {
+  height: 100%;
+  background: #1e3029;
+  color: white;
+}
+
+.end-page .page-content {
+  background: #1e3029;
+  color: white;
+  padding: 30px;
+}
+
+.end-page .page-title {
+  font-size: 38px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.end-page .page-desc {
+  color: #d2d9d2;
+}
+
+.end-page .page-footer {
+  border-color: #52645b;
+  color: #d1d4cc;
+}
+
+/* CONTROLS */
+
+.book-controls {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 5px 10px;
+}
+
+.page-counter {
+  min-width: 105px;
+  text-align: center;
+  color: #2b332f;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #dcd7ce;
+  border-radius: 20px;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.progress-track {
+  flex-shrink: 0;
+  height: 2px;
+  width: min(300px, 45%);
+  background: #dcd9d1;
+  margin: 7px auto 0;
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  background: #a58b5b;
+  transition: width .2s;
+}
+
+.book-hint {
+  flex-shrink: 0;
+  text-align: center;
+  color: #8b8b83;
+  font-size: 10px;
+  padding: 8px 10px 12px;
+}
+
+/* LOADING / ERROR */
+
+.book-message {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  color: #555;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .popup-header {
+    padding: 10px 12px;
+    min-height: 54px;
+    flex-wrap: wrap;
+  }
+
+  .popup-brand {
+    font-size: 11px;
+  }
+
+  .popup-actions {
+    gap: 6px;
+  }
+
+  .popup-header .btn-outline-book {
+    padding: 8px 9px;
+    font-size: 10px;
+  }
+
+  .book-stage {
+    padding: 4px;
+  }
+
+  #book {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .page-content {
+    padding: 18px 16px 12px;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .photo-grid {
+    grid-template-rows: minmax(90px, 19vh) minmax(65px, 13vh);
+  }
+
+  .quote {
+    padding: 9px;
+    font-size: 10px;
+  }
+
+  .book-controls {
+    gap: 5px;
+    padding: 4px 5px;
+  }
+
+  .btn-book,
+  .btn-outline-book {
+    padding: 9px 10px;
+    font-size: 10px;
+  }
+
+  .page-counter {
+    min-width: 76px;
+    font-size: 10px;
+  }
+
+  .book-hint {
+    font-size: 9px;
+    padding: 6px 5px 9px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cover-content {
+    padding: 25px 20px;
+  }
+
+  .page-content {
+    padding: 14px 12px 10px;
+  }
+
+  .project-name {
+    font-size: 17px;
+  }
+
+  .project-meta {
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MAIN NAVBAR -->
+<header class="navbar scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="./DRUVANTHEERA_FINAL_LOGO.png" alt="Dhruvantheera Constructions" class="brand-logo" />
+      <div class="brand-text">
+        <span class="brand-name">DHRUVANTHEERA</span>
+        <span class="brand-sub">CONSTRUCTIONS</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="dhruvantheera-portfolio-refined.html">Portfolio</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#values">Values</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="Book.html" style="color: var(--gold);">Book</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-gold" onclick="window.location.href='index.html'">
+        Back to Home <span class="btn-arrow">→</span>
+      </button>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  </div>
+</header>
+
+<!-- BOOK POPUP (auto-opens, full page) -->
+<div class="book-popup open" id="bookPopup"
+     role="dialog" aria-modal="true"
+     aria-label="Our Top 10 Completed Projects"
+     style="top: 72px; height: calc(100dvh - 72px);">
+
+  <div class="book-stage">
+    <div id="book">
+      <div class="book-message">Preparing your project book...</div>
+    </div>
+  </div>
+
+  <div class="book-controls">
+    <button class="btn-outline-book" id="firstBtn">First</button>
+    <button class="btn-book" id="prevBtn">Previous</button>
+    <span class="page-counter" id="pageCounter">Page 1 / 12</span>
+    <button class="btn-book" id="nextBtn">Next</button>
+    <button class="btn-outline-book" id="lastBtn">Last</button>
+  </div>
+
+  <div class="progress-track">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <div class="book-hint">
+    Turn pages using the arrows, page corners, or swipe on your phone.
+  </div>
+</div>
+
+<!-- PAGE-FLIP LIBRARY -->
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+<script>
+"use strict";
+
+/*
+  DEMO CONTENT:
+  Replace project names, years, locations and feedback with verified data.
+  The online images are illustrative architecture photographs.
+*/
+
+const imageBank = [
+  "photo-1600585154340-be6161a56a0c",
+  "photo-1600607687939-ce8a6c25118c",
+  "photo-1600566753086-00f18fb6b3ea",
+  "photo-1600607687920-4e2a09cf159d",
+  "photo-1600607687644-c7171b42498f",
+  "photo-1600566753190-17f0baa2a6c3",
+  "photo-1600573472550-8090b5e0745e",
+  "photo-1600210492486-724fe5c67fb0",
+  "photo-1600607688969-a5bfcd646154",
+  "photo-1600566752355-35792bedcfea"
+];
+
+function photo(index, width = 650) {
+  const id = imageBank[index % imageBank.length];
+
+  return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=80`;
+}
+
+const projects = [
+  {
+    name: "Contemporary Family Residence",
+    year: "2026",
+    type: "Residential Construction",
+    location: "Hyderabad, Telangana",
+    images: [0, 1, 2],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Modern Commercial Building",
+    year: "2025",
+    type: "Commercial Construction",
+    location: "Secunderabad, Telangana",
+    images: [3, 4, 5],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Luxury Independent Villa",
+    year: "2025",
+    type: "Luxury Residential",
+    location: "Miyapur, Hyderabad",
+    images: [6, 7, 8],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Residential Apartment Block",
+    year: "2025",
+    type: "Multi-Unit Residential",
+    location: "Kompally, Hyderabad",
+    images: [9, 0, 1],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Elegant Duplex Residence",
+    year: "2024",
+    type: "Residential Construction",
+    location: "Gachibowli, Hyderabad",
+    images: [2, 4, 6],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Office & Business Centre",
+    year: "2024",
+    type: "Commercial Construction",
+    location: "Kukatpally, Hyderabad",
+    images: [1, 5, 8],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Premium Family Home",
+    year: "2024",
+    type: "Luxury Residential",
+    location: "Tellapur, Telangana",
+    images: [0, 3, 7],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Contemporary Urban Residence",
+    year: "2023",
+    type: "Residential Construction",
+    location: "Manikonda, Hyderabad",
+    images: [4, 6, 9],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Modern Residential Complex",
+    year: "2023",
+    type: "Multi-Unit Residential",
+    location: "Hyderabad, Telangana",
+    images: [1, 5, 9],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  },
+  {
+    name: "Private Luxury Residence",
+    year: "2023",
+    type: "Luxury Residential",
+    location: "Secunderabad, Telangana",
+    images: [2, 6, 8],
+    feedback: "Replace with the real client's approved feedback.",
+    client: "Client testimonial to be added"
+  }
+];
+
+const popup = document.getElementById("bookPopup");
+const book = document.getElementById("book");
+const counter = document.getElementById("pageCounter");
+const progress = document.getElementById("progressFill");
+
+let pageFlip = null;
+let initialized = false;
+let initializationPromise = null;
+let previousFocus = null;
+
+function pageFooter(number) {
+  return `
+    <div class="page-footer">
+      <span>DHRUVANTHEERA CONSTRUCTIONS</span>
+      <span>${String(number).padStart(2, "0")}</span>
+    </div>`;
+}
+
+function appendPage(html, className = "") {
+  const page = document.createElement("div");
+  page.className = "page " + className;
+  page.innerHTML = html;
+  book.appendChild(page);
+}
+
+function createCover() {
+  appendPage(`
+    <div class="cover-page">
+      <img class="cover-photo"
+           src="DRUVANTHEERA_FINAL_LOGO.png"
+           alt="Illustrative modern architecture"> 
+
+      <div class="cover-overlay"></div>
+
+      <div class="cover-content">
+        <div class="cover-company">
+          DHRUVANTHEERA<br>CONSTRUCTIONS
+        </div>
+
+        <div>
+          <div class="page-kicker">Architecture · Engineering · Excellence</div>
+          <div class="cover-rule"></div>
+
+          <h1 class="cover-title">
+            Our Top 10<br>Completed<br>Projects
+          </h1>
+
+          <p style="font-size:11px;color:#e8e5dc;line-height:1.8">
+            A collection of spaces built with purpose,
+            precision and care.
+          </p>
+        </div>
+
+        <div class="cover-bottom">
+          PROJECT PORTFOLIO<br>
+          DIGITAL EDITION · 2026
+        </div>
+      </div>
+    </div>
+  `);
+}
+
+function createProjectPage(project, index) {
+  const gallery = project.images.map((imageIndex, photoIndex) => `
+    <img
+      src="${photo(imageIndex, 600)}"
+      alt="${project.name} - illustrative photograph ${photoIndex + 1}"
+      ${photoIndex === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+  `).join("");
+
+  const mapUrl =
+    "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent(project.location);
+
+  appendPage(`
+    <div class="page-content">
+      <div class="page-kicker">Completed Projects · ${project.year}</div>
+
+      <div class="project-heading">
+        <div class="project-number">
+          PROJECT ${String(index + 1).padStart(2, "0")} / 10
+        </div>
+
+        <h2 class="project-name">${project.name}</h2>
+        <div class="project-type">${project.type}</div>
+      </div>
+
+      <div class="photo-grid">
+        ${gallery}
+      </div>
+
+      <div class="project-meta">
+        <span>📍 ${project.location}</span>
+        <a href="${mapUrl}" target="_blank" rel="noopener noreferrer">
+          View location ↗
+        </a>
+      </div>
+
+      <div class="page-kicker">Client experience</div>
+
+      <div class="quote" style="margin-top:8px">
+        “${project.feedback}”
+        <span class="quote-author">${project.client}</span>
+      </div>
+
+      <p class="project-note">
+        Project photographs and information should be replaced with
+        verified details before publication.
+      </p>
+
+      ${pageFooter(index + 2)}
+    </div>
+  `);
+}
+
+function createClosingPage() {
+  appendPage(`
+    <div class="end-page">
+      <div class="page-content">
+        <div class="page-kicker">Your vision. Our commitment.</div>
+
+        <h2 class="page-title">
+          Let's build<br>what comes next.
+        </h2>
+
+        <p class="page-desc">
+          Thank you for exploring our completed projects.
+          We look forward to creating spaces that stand the test of time.
+        </p>
+
+        <div style="margin-top:30px;border-top:1px solid #52645b;padding-top:18px">
+          <div class="page-kicker">Contact our team</div>
+
+          <p style="font:20px 'Playfair Display';margin:12px 0">
+            DHRUVANTHEERA<br>CONSTRUCTIONS
+          </p>
+
+          <p class="page-desc">
+            Add your verified business phone number, email and address.
+          </p>
+        </div>
+
+        ${pageFooter(12)}
+      </div>
+    </div>
+  `);
+}
+
+function buildPages() {
+  book.innerHTML = "";
+
+  createCover();
+
+  projects.forEach((project, index) => {
+    createProjectPage(project, index);
+  });
+
+  createClosingPage();
+}
+
+function updateControls() {
+  if (!pageFlip) return;
+
+  const current = pageFlip.getCurrentPageIndex();
+  const total = pageFlip.getPageCount();
+
+  counter.textContent = `Page ${current + 1} / ${total}`;
+  progress.style.width = `${((current + 1) / total) * 100}%`;
+}
+
+/*
+  Initialize only after the popup is visible and has a measurable size.
+  The initialization promise prevents double initialization.
+*/
+
+function initializeBook() {
+  if (initialized) return Promise.resolve();
+
+  if (initializationPromise) return initializationPromise;
+
+  initializationPromise = new Promise((resolve, reject) => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        try {
+          if (!window.St || !window.St.PageFlip) {
+            throw new Error(
+              "PageFlip library did not load. Check your internet connection."
+            );
+          }
+
+          buildPages();
+
+          const stage = document.querySelector(".book-stage");
+          const stageHeight = stage.clientHeight;
+
+          if (!stageHeight || stage.clientWidth < 100) {
+            throw new Error("The book popup has no available display space.");
+          }
+
+          const pageHeight = Math.min(680, stageHeight - 12);
+          const pageWidth = Math.round(pageHeight * 0.677);
+
+          pageFlip = new St.PageFlip(book, {
+            width: pageWidth,
+            height: pageHeight,
+            size: "stretch",
+            minWidth: 230,
+            maxWidth: 520,
+            minHeight: 340,
+            maxHeight: 740,
+            showCover: true,
+            usePortrait: true,
+            autoSize: true,
+            drawShadow: true,
+            maxShadowOpacity: 0.28,
+            flippingTime: 800,
+            mobileScrollSupport: true,
+            useMouseEvents: true,
+            startPage: 0,
+            disableFlipByClick: false,
+            swipeDistance: 30
+          });
+
+          pageFlip.loadFromHTML(
+            book.querySelectorAll(".page")
+          );
+
+          pageFlip.on("flip", updateControls);
+          pageFlip.on("init", updateControls);
+          pageFlip.on("changeOrientation", updateControls);
+
+          initialized = true;
+          updateControls();
+          resolve();
+        } catch (error) {
+          console.error("Book initialization failed:", error);
+          initializationPromise = null;
+          reject(error);
+        }
+      });
+    });
+  });
+
+  return initializationPromise;
+}
+
+async function openBook() {
+  previousFocus = document.activeElement;
+
+  popup.classList.add("open");
+  document.body.classList.add("book-open");
+
+  try {
+    await initializeBook();
+
+    // Always start at the cover when the popup opens.
+    if (pageFlip) {
+      pageFlip.flip(0);
+      updateControls();
+    }
+  } catch (error) {
+    book.innerHTML = `
+      <div class="book-message">
+        <div>
+          <h3>Unable to open the book</h3>
+          <p>${error.message}</p>
+          <button class="btn-book" id="retryBookBtn">Try again</button>
+        </div>
+      </div>
+    `;
+
+    document.getElementById("retryBookBtn").addEventListener("click", () => {
+      initializationPromise = null;
+      openBook();
+    });
+  }
+}
+
+function closeBook() {
+  popup.classList.remove("open");
+  document.body.classList.remove("book-open");
+
+  if (previousFocus && typeof previousFocus.focus === "function") {
+    previousFocus.focus();
+  }
+}
+
+/* OPEN / CLOSE */
+
+// Auto-open the book on page load
+window.addEventListener("load", () => {
+  try {
+    sessionStorage.setItem("site_intro_played", "true");
+  } catch (e) {}
+  openBook();
+});
+
+// No closeBookBtn in new layout; keyboard Escape still works
+
+/* BACK TO COVER FROM ANY PAGE */
+
+document.getElementById("backToCoverBtn") && document.getElementById("backToCoverBtn").addEventListener("click", () => {
+  if (!pageFlip) return;
+  pageFlip.flip(0);
+  updateControls();
+});
+
+/* PAGE NAVIGATION */
+
+document.getElementById("firstBtn").addEventListener("click", () => {
+  if (pageFlip) pageFlip.flip(0);
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  if (pageFlip) pageFlip.flipPrev();
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  if (pageFlip) pageFlip.flipNext();
+});
+
+document.getElementById("lastBtn").addEventListener("click", () => {
+  if (pageFlip) pageFlip.flip(pageFlip.getPageCount() - 1);
+});
+
+/* KEYBOARD NAVIGATION */
+
+document.addEventListener("keydown", event => {
+  if (!popup.classList.contains("open")) return;
+
+  if (event.key === "Escape") {
+    // On Book page, Escape goes back to home
+    window.location.href = "index.html";
+    return;
+  }
+
+  if (!pageFlip || event.altKey || event.ctrlKey || event.metaKey) return;
+
+  if (event.key === "ArrowRight") pageFlip.flipNext();
+  if (event.key === "ArrowLeft") pageFlip.flipPrev();
+});
+
+/* KEEP BOOK DIMENSIONS RESPONSIVE */
+
+let resizeFrame = null;
+
+window.addEventListener("resize", () => {
+  if (!popup.classList.contains("open") || !pageFlip) return;
+
+  cancelAnimationFrame(resizeFrame);
+
+  resizeFrame = requestAnimationFrame(() => {
+    if (pageFlip) updateControls();
+  });
+});
+</script>
+
+<script>
+  // Mobile menu toggle (mirrors main site behavior)
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  }
+</script>
+
+</body>
+</html>
