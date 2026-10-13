@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Montserrat:wght@500;600;700;800&display=swap');
+
 /* =========================================================
    ROOT
 ========================================================= */
@@ -256,14 +258,13 @@ html.skip-intro body.intro-active {
 }
 
 .intro-title {
-    font-family: "Manrope", sans-serif;
+    font-family: "Cinzel", "Playfair Display", "Times New Roman", serif;
     font-size: clamp(22px, 4vw, 36px);
     font-weight: 800;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
     line-height: 1.25;
     text-transform: capitalize;
     margin: 0;
-  
 
     background: linear-gradient(135deg, #ffffff 0%, #f6eccd 35%, #c9a86a 70%, #edd89f 90%, #ffffff 100%);
     -webkit-background-clip: text;
